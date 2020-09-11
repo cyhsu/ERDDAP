@@ -17,9 +17,9 @@ ERDDAP is useful for all of the regional institutes, and the organization that p
 # Pre Requirements
 Before you move on, you have to have docker and docker-compose. Please go to [docker official site](https://docs.docker.com/get-docker/) for the installation. 
 
-# Procedures
-   ## Installation
-      ### install by docker-compose
+# Procedures   
+   ## Installation   
+      ### install by docker-compose   
          ```
             docker-compose up -d
          ```
@@ -28,7 +28,7 @@ Before you move on, you have to have docker and docker-compose. Please go to [do
             docker image build -t erddap .
             docker run -itd -e DISPLAY -v {$PWD}:/usr/local/tomcat8 -p 8888:8080 --name erddap erddap
          ```
-   ## execute in container
+   ## execute in container   
          ```
             docker exec -it erddap bash
          ```
