@@ -1,0 +1,13 @@
+version: '3'
+
+services: 
+   erddap-dev:
+      build: .
+      restart: always
+      ports:
+         - "8888:8080"
+         - "8883:8443"
+         - "8889:8009"
+      volumes:
+         - "./tomcat8:/usr/local/tomcat8"
+         - "./doc:/usr/local/tomcat8/doc"
