@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-MAINTAINER Chuan-Yuan Hsu <chsu1@tamu.edu>
+MAINTAINER Franke Hsu "chsu1@tamu.edu"
 
 ENV HOME /usr/local/tomcat8
 

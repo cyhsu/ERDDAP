@@ -3,6 +3,7 @@ version: '3'
 services: 
    erddap:
       build: .
+      image: erddap_dev:2.02
       restart: always
       ports:
          - "8888:8080"
