@@ -12,7 +12,8 @@ ERDDAP is useful for all of the regional institutes, and the organization that p
 - [Procedures](###Procedures)  
    - [Installation](####Installation)   
    - [execute in container](####execute-in-container)  
-- [Get in touch](###Get-in-touch)  
+- [Get in touch](###get-in-touch)
+
 
 
 ### Requirements
@@ -37,5 +38,5 @@ Before you move on, you have to have docker and docker-compose. Please go to [do
 
 ### Get in touch
 
-Report bugs, suggest features, or view the source code on [GitHub](https://github.com/cyhsu/ERDDAP/issues).
+Report bugs, suggest features or view the source code on [GitHub](https://github.com/cyhsu/ERDDAP/issues).
 
