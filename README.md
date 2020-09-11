@@ -10,9 +10,9 @@ ERDDAP is useful for all of the regional institutes, and the organization that p
 ## Table of Contents  
 - [Requirements](###Requirements)  
 - [Procedures](###Procedures)  
-   - [Installation](####Installation)  
-   - [execute in container](####execute in container)  
-- [Get in touch](###Get in touch)  
+   - [Installation](####Installation)   
+   - [execute in container](####execute-in-container)  
+- [Get in touch](###Get-in-touch)  
 
 
 ### Requirements
@@ -21,7 +21,7 @@ Before you move on, you have to have docker and docker-compose. Please go to [do
 ### Procedures  
 
 ### Installation   
-####install by docker-compose   
+#### install by docker-compose   
 ```
    docker-compose up -d
 ```
