@@ -4,11 +4,11 @@ services:
    erddap:
       build: .
       image: erddap_dev:2.02
+      container_name: erddap
       restart: always
       ports:
          - "8888:8080"
          - "8883:8443"
          - "8889:8009"
       volumes:
-         - "./tomcat8:/usr/local/tomcat8"
-         - "./doc:/usr/local/tomcat8/doc"
+         - ./tomcat8:/usr/local/tomcat8

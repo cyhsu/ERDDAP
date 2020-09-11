@@ -1,4 +1,9 @@
 #!/bin/bash
+homedir='/usr/local/tomcat8'
+echo $PWD >> /usr/local/tomcat8/abccc
+
+cd $homedir
+
 mkdir tarz
 #-
 #- TOMCAT 8
@@ -22,3 +27,9 @@ cp ./doc/conf/web.xml ./conf/web.xml
 cp ./doc/content/datasets.xml ./content/erddap/datasets.xml
 cp ./doc/content/setup.xml ./content/erddap/setup.xml
 
+#-
+#- mkdir a data folder under $HOME/data
+#-
+mkdir data
+
+ln ./bin/catalina.sh catalina.sh

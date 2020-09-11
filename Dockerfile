@@ -8,16 +8,22 @@ RUN apt-get -y update && apt-get -y install unzip wget openjdk-8-jdk
 
 #RUN apt-get -y install apt-utils unzip wget openjdk-8-jdk
 #RUN apt install unzip wget w3m lsof openjdk-8-jdk -y
+##
+##COPY ./installERDDAP.sh $HOME/installERDDAP.sh
+##
+##COPY ./doc $HOME/doc
 
-COPY ./installERDDAP.sh $HOME/installERDDAP.sh
+COPY . $HOME/
 
 RUN chmod +x $HOME/installERDDAP.sh
 
-COPY ./doc $HOME/doc
-
 WORKDIR $HOME
 
-RUN $HOME/installERDDAP.sh
+RUN mkdir happy
 
-EXPOSE 8080
-CMD ["./bin/catalina.sh","run"]
+RUN ./installERDDAP.sh
+#RUN $HOME/installERDDAP.sh
+
+EXPOSE 8080 8443 8009
+#ENTRYPOINT ["tail", "-f", "/dev/null"] 
+CMD ["catalina.sh","run"]
