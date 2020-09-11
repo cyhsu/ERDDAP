@@ -6,12 +6,12 @@ ERDDAP is a data server, which has been widely used in the geoscience field. It 
 
 ERDDAP is useful for all of the regional institutes, and the organization that plays a role as a data center. It is also the base of other geoscience data services, e.g. the TDS/WMS server. Also, by the official document what it suggests that the administrator of an ERDDAP should have another ERDDAP service as a developer to deal with your datasets first. This is mainly caused by time-wasting on the I/O. ERDDAP also needs some efforts and time to work on the installation. Thus why a docker container is a good option. Here, a docker container for ERDDAP is built. The ERDDAP container mounts the necessary folders with local storage space. I hope this will help us to deal with the datasets. 
 
-#Table of Contents
-- [Pre-Requirements](#Pre Requirements)
--[Procedures](#Procedures)
-   - [Installation](##Installation)
-   - [execute in container](##execute in container)
-- [Get in touch](#Get in touch)
+#Table of Contents  
+- [Pre-Requirements](#Pre Requirements)  
+- [Procedures](#Procedures)  
+   - [Installation](##Installation)  
+   - [execute in container](##execute in container)  
+- [Get in touch](#Get in touch)  
 
 
 # Pre Requirements
