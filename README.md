@@ -36,7 +36,7 @@ Before you move on, you have to have docker and docker-compose. Please go to [do
    docker exec -it erddap bash
 ```
 
-### Get in touch
+### Get-in-touch
 
 Report bugs, suggest features or view the source code on [GitHub](https://github.com/cyhsu/ERDDAP/issues).
 
