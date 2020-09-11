@@ -8,11 +8,11 @@ ERDDAP is useful for all of the regional institutes, and the organization that p
 
 
 ## Table of Contents  
-- [Requirements](###Requirements)  
+- [Requirements](https://github.com/cyhsu/ERDDAP#requirements)  
 - [Procedures](###Procedures)  
    - [Installation](####Installation)   
    - [execute in container](####execute-in-container)  
-- [Get in touch](###get-in-touch)
+- [Get in touch](https://github.com/cyhsu/ERDDAP#get-in-touch)
 
 
 
