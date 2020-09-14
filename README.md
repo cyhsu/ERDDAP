@@ -28,8 +28,15 @@ Before you move on, you have to have docker and docker-compose. Please go to [do
 ```
 #### install by Dockerfile
 ```
+   wget -qq https://github.com/BobSimons/erddap/releases/download/v2.02/erddapContent.zip -O ./tarz/erddapContent.zip
+   unzip ./tarz/erddapContent.zip -d ${homedir}/
+   wget -qq https://github.com/BobSimons/erddap/releases/download/v2.02/erddap.war
    docker image build -t erddap .
-   docker run -itd -e DISPLAY -v {$PWD}:/usr/local/tomcat8 -p 8888:8080 --name erddap erddap
+   docker run -itd -e DISPLAY \
+         -v {$PWD}/data:/usr/local/tomcat8/data \
+	 -v {$PWD}/content:/usr/local/tomcat8/content \
+	 -v {$PWD}/erddap.war:/usr/local/tomcat8/webapps/erddap.war \
+         -p 8888:8080 --name erddap erddap
 ```
 ### execute in container   
 ```
