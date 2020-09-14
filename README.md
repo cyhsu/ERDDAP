@@ -24,7 +24,7 @@ Before you move on, you have to have docker and docker-compose. Please go to [do
 ### Installation   
 #### install by docker-compose   
 ```
-   docker-compose up -d
+	./installERDDAP.sh
 ```
 #### install by Dockerfile
 ```
