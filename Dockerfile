@@ -3,8 +3,8 @@ MAINTAINER Franke Hsu "chsu1@tamu.edu"
 
 ENV HOME /usr/local/tomcat8
 
-RUN apt-get -y update #&& apt-get -y upgrade
-RUN apt-get -y install unzip wget vim w3m openjdk-8-jdk
+RUN apt -y update #&& apt -y upgrade
+RUN apt -y install unzip wget vim w3m openjdk-8-jdk bc netcdf-bin openssh-client
 
 ENV ERDDAP_VERSION=8.5.57
 
