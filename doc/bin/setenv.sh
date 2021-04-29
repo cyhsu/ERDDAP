@@ -8,7 +8,8 @@ export CATALINA_BASE=/usr/local/tomcat8
 
 CONTENT_ROOT="-Dtds.content.root.path=/usr/local/tomcat8/content"
 
-NORMAL='-server -Xmx64000M -Xms64000M -d64'
+#NORMAL='-server -Xmx64000M -Xms64000M -d64'
+NORMAL='-server -Xmx10g -Xms10g -d64 -XX:+UseG1GC -XX:+UseParallelGC -XX:+UseParallelOldGC -XX:PermSize=512m -XX:MaxNewSize=512m -XX:MaxPermSize=5120m'
 
 HEADLESS="-Djava.awt.headless=true"
 
